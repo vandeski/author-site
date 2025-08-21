@@ -14,23 +14,29 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="bg-secondary-dark shadow-lg">
+    <nav className="bg-secondary-dark shadow-lg sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16">
-          <div className="flex items-center">
-            <Link to="/" className="text-primary text-xl font-bold">
+        <div className="flex justify-between h-20">
+          <div className="flex items-center space-x-4">
+            {/* Logo Placeholder */}
+            <div className="flex-shrink-0 flex items-center">
+              <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center">
+                <span className="text-2xl">📖</span>
+              </div>
+            </div>
+            <Link to="/" className="text-primary text-xl font-bold tracking-wide hover:text-secondary transition-colors">
               Michael Vadney
             </Link>
           </div>
           
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8 items-center">
+          <div className="hidden md:flex space-x-1 items-center">
             {navItems.map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
-                className={`text-primary hover:text-secondary transition-colors px-3 py-2 rounded-md text-sm font-medium ${
-                  location.pathname === item.path ? 'bg-secondary' : ''
+                className={`text-primary hover:text-secondary hover:bg-secondary/10 transition-all duration-200 px-4 py-2 rounded-lg text-sm font-medium tracking-wide ${
+                  location.pathname === item.path ? 'bg-secondary text-white' : ''
                 }`}
               >
                 {item.label}
@@ -42,7 +48,7 @@ const Navigation = () => {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-primary hover:text-secondary focus:outline-none focus:text-secondary"
+              className="text-primary hover:text-secondary focus:outline-none focus:text-secondary transition-colors p-2"
               aria-label="Toggle menu"
             >
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -58,14 +64,14 @@ const Navigation = () => {
 
         {/* Mobile Navigation Menu */}
         {isMenuOpen && (
-          <div className="md:hidden">
+          <div className="md:hidden border-t border-secondary/20">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               {navItems.map((item) => (
                 <Link
                   key={item.path}
                   to={item.path}
-                  className={`text-primary hover:text-secondary transition-colors block px-3 py-2 rounded-md text-base font-medium ${
-                    location.pathname === item.path ? 'bg-secondary' : ''
+                  className={`text-primary hover:text-secondary hover:bg-secondary/10 transition-all duration-200 block px-3 py-3 rounded-md text-base font-medium ${
+                    location.pathname === item.path ? 'bg-secondary text-white' : ''
                   }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
