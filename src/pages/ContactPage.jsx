@@ -45,7 +45,7 @@ const ContactPage = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <div className="relative py-20 bg-gradient-to-br from-gray-900 via-slate-800 to-secondary-dark">
+      <div className="relative py-20 bg-white">
         <div className="absolute inset-0 opacity-20">
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/10 to-transparent"></div>
@@ -54,10 +54,10 @@ const ContactPage = () => {
           <div className="inline-block bg-secondary/20 backdrop-blur-sm p-6 rounded-full mb-8">
             <span className="text-8xl">📧</span>
           </div>
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight mb-6">
             Get in <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary via-teal-300 to-cyan-300">Touch</span>
           </h1>
-          <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Whether it's business, podcast topics, or just to say hello—I'd love to hear from you
           </p>
         </div>
@@ -71,7 +71,7 @@ const ContactPage = () => {
           <div className="bg-white rounded-3xl p-8 lg:p-10 shadow-xl border border-gray-100">
             <div className="text-center mb-8">
               <div className="inline-block bg-gradient-to-br from-secondary to-secondary-dark p-6 rounded-full mb-6 shadow-lg">
-                <span className="text-white text-4xl">💼</span>
+                <span className="text-gray-900 text-4xl">💼</span>
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Business Inquiries</h2>
               <p className="text-gray-600">Professional opportunities and collaborations</p>
@@ -122,7 +122,7 @@ const ContactPage = () => {
           <div className="bg-white rounded-3xl p-8 lg:p-10 shadow-xl border border-gray-100">
             <div className="text-center mb-8">
               <div className="inline-block bg-gradient-to-br from-purple-600 to-pink-600 p-6 rounded-full mb-6 shadow-lg">
-                <span className="text-white text-4xl">🎙️</span>
+                <span className="text-gray-900 text-4xl">🎙️</span>
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Podcast Topics</h2>
               <p className="text-gray-600">Ideas, feedback, and guest suggestions</p>
@@ -186,7 +186,7 @@ const ContactPage = () => {
                 href={social.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`group bg-gray-50 hover:text-white rounded-xl transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-105 ${social.color} p-6 text-center`}
+                className={`group bg-gray-50 hover:text-gray-900 rounded-xl transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-105 ${social.color} p-6 text-center`}
               >
                 <div className="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">{social.icon}</div>
                 <div className="font-semibold text-lg mb-1">{social.platform}</div>

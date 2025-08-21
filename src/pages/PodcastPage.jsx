@@ -53,7 +53,7 @@ const PodcastPage = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <div className="relative py-20 bg-gradient-to-br from-gray-900 via-slate-800 to-secondary-dark">
+      <div className="relative py-20 bg-white">
         <div className="absolute inset-0 opacity-20">
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/10 to-transparent"></div>
@@ -62,17 +62,17 @@ const PodcastPage = () => {
           <div className="inline-block bg-secondary/20 backdrop-blur-sm p-6 rounded-full mb-8">
             <span className="text-8xl">🎙️</span>
           </div>
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight mb-6">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary via-teal-300 to-cyan-300">
               Author Adjacent
             </span>
             <br />
             Podcast
           </h1>
-          <p className="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed mb-8">
+          <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-8">
             The honest journey from hobbyist writer to professional author
           </p>
-          <p className="text-lg text-gray-400 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg text-gray-500 max-w-3xl mx-auto leading-relaxed">
             If you're reading this, you may not be ready to call yourself an author. Even the host, Michael Vadney, isn't there yet—but until then, we can be Author Adjacent.
           </p>
         </div>
@@ -101,7 +101,7 @@ const PodcastPage = () => {
                 {/* Play button overlay */}
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="w-20 h-20 bg-red-600 rounded-full flex items-center justify-center shadow-2xl">
-                    <span className="text-white text-2xl ml-1">▶</span>
+                    <span className="text-gray-900 text-2xl ml-1">▶</span>
                   </div>
                 </div>
               </div>
@@ -111,7 +111,7 @@ const PodcastPage = () => {
               href="https://www.youtube.com/@AuthorAdjacent" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-flex items-center bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl font-semibold text-lg transform hover:scale-105"
+              className="inline-flex items-center bg-red-600 hover:bg-red-700 text-gray-900 px-8 py-4 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl font-semibold text-lg transform hover:scale-105"
             >
               <span className="mr-3 text-xl">▶️</span>
               Subscribe on YouTube
@@ -132,7 +132,7 @@ const PodcastPage = () => {
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center space-x-2 mb-2">
-                      <span className="bg-secondary text-white px-3 py-1 rounded-full text-sm font-semibold">
+                      <span className="bg-secondary text-gray-900 px-3 py-1 rounded-full text-sm font-semibold">
                         {episode.date}
                       </span>
                       <span className="text-gray-500 text-sm">{episode.duration}</span>
@@ -191,7 +191,7 @@ const PodcastPage = () => {
               href="https://x.com/AuthorAdjacent" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="group bg-gray-50 hover:bg-blue-500 hover:text-white rounded-xl transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-105 p-6 text-center"
+              className="group bg-gray-50 hover:bg-blue-500 hover:text-gray-900 rounded-xl transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-105 p-6 text-center"
             >
               <div className="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">🐦</div>
               <div className="font-semibold text-lg mb-1">Follow on X</div>
@@ -202,7 +202,7 @@ const PodcastPage = () => {
               href="https://www.youtube.com/@AuthorAdjacent" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="group bg-gray-50 hover:bg-red-600 hover:text-white rounded-xl transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-105 p-6 text-center"
+              className="group bg-gray-50 hover:bg-red-600 hover:text-gray-900 rounded-xl transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-105 p-6 text-center"
             >
               <div className="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">📺</div>
               <div className="font-semibold text-lg mb-1">Subscribe on YouTube</div>
@@ -211,7 +211,7 @@ const PodcastPage = () => {
             
             <a 
               href="/contact" 
-              className="group bg-gray-50 hover:bg-secondary hover:text-white rounded-xl transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-105 p-6 text-center"
+              className="group bg-gray-50 hover:bg-secondary hover:text-gray-900 rounded-xl transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-105 p-6 text-center"
             >
               <div className="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">📧</div>
               <div className="font-semibold text-lg mb-1">Suggest Topics</div>
@@ -221,7 +221,7 @@ const PodcastPage = () => {
         </div>
 
         {/* Call to Action */}
-        <div className="bg-gradient-to-br from-secondary-dark via-gray-900 to-slate-900 text-white p-12 lg:p-16 rounded-3xl shadow-2xl relative overflow-hidden">
+        <div className="bg-gray-50 border border-gray-200 text-gray-900 p-12 lg:p-16 rounded-3xl shadow-2xl relative overflow-hidden">
           <div className="absolute inset-0 opacity-20">
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/10 to-transparent"></div>
@@ -230,7 +230,7 @@ const PodcastPage = () => {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
               Join the <span className="text-secondary">Journey</span>
             </h2>
-            <p className="text-xl text-gray-300 mb-8 leading-relaxed max-w-2xl mx-auto">
+            <p className="text-xl text-gray-600 mb-8 leading-relaxed max-w-2xl mx-auto">
               Whether you're a fellow hobbyist writer or just curious about the publishing world, you're welcome to follow along as we navigate this journey together.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -238,13 +238,13 @@ const PodcastPage = () => {
                 href="https://www.youtube.com/@AuthorAdjacent" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="bg-secondary hover:bg-secondary-dark text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                className="bg-secondary hover:bg-secondary-dark text-gray-900 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
               >
                 🎙️ Listen Now
               </a>
               <a 
                 href="/contact" 
-                className="border-2 border-secondary text-secondary hover:bg-secondary hover:text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105"
+                className="border-2 border-secondary text-secondary hover:bg-secondary hover:text-gray-900 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105"
               >
                 💡 Suggest Topics
               </a>
