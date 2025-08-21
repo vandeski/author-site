@@ -1,12 +1,12 @@
-import Navigation from './Navigation';
+import Navigation from "./Navigation";
+import Footer from "./Footer";
 
 const Layout = ({ children }) => {
   return (
-    <div className="min-h-screen bg-primary text-gray-900">
+    <div className="min-h-screen bg-white text-gray-900 flex flex-col">
       <Navigation />
-      <main>
-        {children}
-      </main>
+      <main className="flex-1">{children}</main>
+      <Footer />
     </div>
   );
 };
