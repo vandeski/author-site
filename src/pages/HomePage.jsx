@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faClock, faGem } from "@fortawesome/free-solid-svg-icons";
+import { GiCrystalGrowth, GiClockwork } from "react-icons/gi";
 
 const HomePage = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -101,10 +101,7 @@ const HomePage = () => {
                   <div className="grid lg:grid-cols-5 gap-12 items-center">
                     <div className="lg:col-span-1">
                       <div className="w-48 h-72 mx-auto bg-gradient-to-br from-secondary via-teal-600 to-secondary-dark rounded-2xl shadow-2xl flex items-center justify-center transform group-hover:rotate-3 transition-transform duration-500">
-                        <FontAwesomeIcon
-                          icon={faGem}
-                          className="text-white text-6xl"
-                        />
+                        <GiCrystalGrowth className="text-white text-6xl" />
                         {/* <img src="/src/assets/crownfall_cover.jpeg" alt="Crownfall Cover" className="w-48 rounded-lg shadow-lg" /> */}
                       </div>
                     </div>
@@ -191,10 +188,7 @@ const HomePage = () => {
                     </div>
                     <div className="lg:col-span-1 order-1 lg:order-2">
                       <div className="w-48 h-72 mx-auto bg-gradient-to-br from-slate-600 via-gray-700 to-slate-800 rounded-2xl shadow-2xl flex items-center justify-center transform group-hover:-rotate-3 transition-transform duration-500">
-                        <FontAwesomeIcon
-                          icon={faClock}
-                          className="text-white text-6xl"
-                        />
+                        <GiClockwork className="text-white text-6xl" />
                       </div>
                     </div>
                   </div>
