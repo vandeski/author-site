@@ -3,7 +3,8 @@
 
 /* Floating animations for circles */
 @keyframes float {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0px) rotate(0deg);
   }
   50% {
@@ -12,7 +13,8 @@
 }
 
 @keyframes float-delayed {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0px) rotate(0deg);
   }
   50% {
@@ -21,11 +23,65 @@
 }
 
 @keyframes float-slow {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0px) rotate(0deg);
   }
   50% {
     transform: translateY(-15px) rotate(90deg);
+  }
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.9) translateY(-25%);
+    opacity: 0.7;
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.9) translateY(-25%);
+    opacity: 0.7;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(3px, 3px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-3px, -6px) rotate(-3deg);
+  }
+  20% {
+    transform: translate(-8px, 0px) rotate(3deg);
+  }
+  30% {
+    transform: translate(8px, 6px) rotate(0deg);
+  }
+  40% {
+    transform: translate(3px, -3px) rotate(3deg);
+  }
+  50% {
+    transform: translate(-3px, 6px) rotate(-3deg);
+  }
+  60% {
+    transform: translate(-8px, 3px) rotate(0deg);
+  }
+  70% {
+    transform: translate(8px, 3px) rotate(-3deg);
+  }
+  80% {
+    transform: translate(-3px, -3px) rotate(3deg);
+  }
+  90% {
+    transform: translate(3px, 6px) rotate(0deg);
+  }
+  100% {
+    transform: translate(3px, 3px) rotate(0deg);
   }
 }
 
@@ -76,16 +132,16 @@
 
 /* Animation classes */
 .animate-float {
-  animation: float 6s ease-in-out infinite;
+  animation: float 1s ease-in-out infinite;
 }
 
 .animate-float-delayed {
-  animation: float-delayed 8s ease-in-out infinite;
+  animation: float-delayed 4s ease-in-out infinite;
   animation-delay: 2s;
 }
 
 .animate-float-slow {
-  animation: float-slow 10s ease-in-out infinite;
+  animation: float-slow 2s ease-in-out infinite;
   animation-delay: 1s;
 }
 
@@ -109,6 +165,37 @@
   animation: scaleIn 1s ease-out forwards;
   animation-delay: 0.1s;
   opacity: 0;
+}
+
+.animate-pop {
+  animation: pop 3s ease-in-out infinite;
+}
+
+.animate-pop-slow {
+  animation: pop 4s ease-in-out infinite;
+}
+
+.animate-shake {
+  animation: shake 5s;
+  animation-iteration-count: infinite;
+}
+
+.animate-shake-delay-1 {
+  animation: shake 5s;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+}
+
+.animate-shake-delay-2 {
+  animation: shake 5s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+}
+
+.animate-shake-delay-3 {
+  animation: shake 5s;
+  animation-iteration-count: infinite;
+  animation-delay: 3s;
 }
 
 /* Delay classes */
