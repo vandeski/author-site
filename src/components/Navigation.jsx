@@ -1,7 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBook } from "@fortawesome/free-solid-svg-icons";
+import { GiCrystalGrowth } from "react-icons/gi";
 
 const Navigation = () => {
   const location = useLocation();
@@ -36,10 +35,7 @@ const Navigation = () => {
             {/* Logo Placeholder */}
             <Link to="/" className="flex items-center space-x-3 group">
               <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 transform group-hover:scale-105">
-                <FontAwesomeIcon
-                  icon={faBook}
-                  className="text-white text-2xl"
-                />
+                <GiCrystalGrowth className="text-white text-2xl" />
               </div>
               <div className="hidden sm:block">
                 <div className="text-gray-900 text-xl font-bold tracking-tight">
