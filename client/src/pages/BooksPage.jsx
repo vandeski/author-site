@@ -52,7 +52,6 @@ const BooksPage = () => {
                       </div>
                     </div>
                   )}
-
                 </div>
 
                 {/* Book Details */}
@@ -61,9 +60,9 @@ const BooksPage = () => {
                 >
                   <div className="space-y-8 bg-white p-10 rounded-3xl shadow-xl">
                     <div>
-                      <span className={`inline-block px-3 py-1 rounded-md text-sm font-medium tracking-wide uppercase mb-4 ${book.status === BOOK_STATUS.PRE_ORDER ? 'bg-amber-50 text-amber-700 border border-amber-200' : 'bg-gray-100 text-gray-600 border border-gray-200'}`}>
+                      {/* <span className={`inline-block px-3 py-1 rounded-md text-sm font-medium tracking-wide uppercase mb-4 ${book.status === BOOK_STATUS.PRE_ORDER ? 'bg-amber-50 text-amber-700 border border-amber-200' : 'bg-gray-100 text-gray-600 border border-gray-200'}`}>
                         {book.status}
-                      </span>
+                      </span> */}
                       <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4">
                         {book.title}
                       </h2>

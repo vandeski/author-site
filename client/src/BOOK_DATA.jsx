@@ -1,6 +1,6 @@
 import { GiCrystalGrowth, GiClockwork } from "react-icons/gi";
 
-import crownfallCover from "/src/assets/crownfall_cover.jpg"
+import crownfallCover from "/src/assets/crownfall_cover.jpg";
 
 export const BOOK_STATUS = {
   IN_DEVELOPMENT: "Worldbuilding",
@@ -9,7 +9,7 @@ export const BOOK_STATUS = {
   EDITING_STAGE: "Editing",
   COMING_SOON: "Coming Soon",
   PRE_ORDER: "Available for Pre-order",
-  RELEASED: "Released",
+  RELEASED: "Out Now",
 };
 
 export const BOOKS = [
@@ -64,7 +64,7 @@ export const BOOKS = [
       </>,
     ],
     release: "April 2026",
-    status: BOOK_STATUS.PRE_ORDER,
+    status: BOOK_STATUS.RELEASED,
     genres: ["Nobledark Fantasy", "Action & Adventure", "Political Intrigue"],
     icon: <GiCrystalGrowth />,
     cover: crownfallCover,
