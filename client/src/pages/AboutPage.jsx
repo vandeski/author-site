@@ -35,30 +35,28 @@ const AboutPage = () => {
               </h2>
               <div className="prose prose-lg max-w-none text-left text-gray-700 leading-relaxed text-lg space-y-4">
                 <p className="">
-                  <strong>Michael Vadney</strong> is an American fantasy author
-                  and podcaster. Born in the Florida Keys and raised in the
-                  woods of Pennsylvania, Michael's love for storytelling began
-                  at an early age. His passion for fantasy literature was
-                  ignited by classics like "The Hobbit" and "Redwall," inspiring
-                  him to create his own worlds filled with complex characters
-                  and fantastic magic.
+                  <strong>Michael Vadney</strong> was born in the Florida Keys,
+                  raised in the woods of Pennsylvania, and currently resides
+                  somewhere between the real world and the fantastic realms in
+                  his head.
                 </p>
                 <p className="">
                   In his early-thirties, he rekindled his childhood dream of
-                  becoming an author. Balancing a full-time career in software,
-                  he dedicated nights, weekends, and many dawns to writing,
-                  learning the craft through trial and error, online videos, and
-                  the writing community.
+                  becoming an author. Balancing a full-time career in software
+                  with an unshakable need to write, Michael dedicated nights,
+                  weekends, and an unreasonable number of pre-dawn hours to
+                  storytelling. The result was <strong>Crownfall</strong>, his
+                  debut novel and proof that sleep is, in fact, optional.
                 </p>
                 <p className="">
-                  Through his debut novel <strong>Crownfall</strong> and the{" "}
-                  <strong>Author Adjacent</strong> podcast, Michael explores
-                  themes of power, justice, and survival while sharing the
-                  challenges and victories of the writing life. His approach to
-                  storytelling emphasizes complex characters facing impossible
-                  choices, intricate world-building that serves the narrative,
-                  and themes that resonate with real human experiences, even in
-                  fantastical settings.
+                  His writing lives in the nobledark corner of fantasy, where
+                  grim, morally complex worlds meet heroic virtues. He believes
+                  every story worth telling explores the space between who we
+                  are and who we could become.
+                </p>
+                <p>
+                  When he's not writing, podcasting, or reading... well, no,
+                  actually, it's almost always one of those three.
                 </p>
               </div>
             </div>
